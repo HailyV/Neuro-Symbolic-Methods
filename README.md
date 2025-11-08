@@ -1,5 +1,3 @@
-# Neuro-Symbolic-Methods
-
 # Neuro-Symbolic Methods: Biomedical Knowledge Discovery and Exploration
 
 This repository contains 3 mentor-guided replication projects conducted under the supervision of **Dr. Justin Eldridge** (UC San Diego) and **Solix Mentors Raju Pusapati** and **Murali Krishnam**.  
