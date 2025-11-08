@@ -48,7 +48,7 @@ def extract_visit_info(dialogue):
         dict: Structured data including complaint, medications, etc.
     """
 
-    # Define the structured schema
+    # Define the schema
     prompt = f"""
     Extract the following structured data from the conversation.
     Return **only** valid JSON — no explanations or extra text.
@@ -90,7 +90,7 @@ N = 50                                   # Adjust N based on token usage or API 
 for d in tqdm(df["dialogue"].head(N)):
     info = extract_visit_info(d)         # Extract structured info for one dialogue
     structured_data.append(info)         
-    time.sleep(0.3)                      # Delay to avoid rate-limit issues
+    time.sleep(0.3)                      
 
 # ---- Post-processing: medication frequency analysis ----
 
